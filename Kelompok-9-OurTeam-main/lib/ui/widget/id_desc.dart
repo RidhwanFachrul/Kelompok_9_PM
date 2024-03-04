@@ -18,7 +18,7 @@ class IDDesc extends StatelessWidget {
       height: 100,
       margin: const EdgeInsets.only(top: 60),
       padding: const EdgeInsets.all(10),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(20)),
         color: Colors.black26, // Tambahkan warna latar belakang
       ),
@@ -27,8 +27,8 @@ class IDDesc extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              this.nama,
-              style: TextStyle(
+              nama,
+              style: const TextStyle(
                 fontSize: 12, 
                 color: Colors.white,
                 fontFamily: 'Poppins'
@@ -36,15 +36,15 @@ class IDDesc extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                if (this.nama == "Kevin Cahyo Pratama") {
+                if (nama == "Kevin Cahyo Pratama") {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            Page2()), // Pastikan Page2() adalah halaman yang ingin ditampilkan saat tombol ditekan
+                            const Page2()), // Pastikan Page2() adalah halaman yang ingin ditampilkan saat tombol ditekan
                   );
                 }
-                else if(this.nama == "Ridhwan Fachrul Arief") {
+                else if(nama == "Ridhwan Fachrul Arief") {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -53,7 +53,7 @@ class IDDesc extends StatelessWidget {
                   );
                 }
               },
-              child: Text("Lihat Selengkapnya"),
+              child: const Text("Lihat Selengkapnya"),
             )
           ],
         ),
