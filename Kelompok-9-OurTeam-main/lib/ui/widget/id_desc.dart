@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
 import 'package:our_team_card/ui/widget/card_desc.dart';
+import 'package:our_team_card/ui/widget/hafiz_desc.dart';
 import 'package:our_team_card/ui/widget/ridhwan_desc.dart'; // Jika perlu, ganti dengan path yang benar ke file card_desc.dart
 
 class IDDesc extends StatelessWidget {
@@ -41,7 +42,7 @@ class IDDesc extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            const Page2()), // Pastikan Page2() adalah halaman yang ingin ditampilkan saat tombol ditekan
+                             Page2()), // Pastikan Page2() adalah halaman yang ingin ditampilkan saat tombol ditekan
                   );
                 }
                 else if(nama == "Ridhwan Fachrul Arief") {
@@ -50,6 +51,14 @@ class IDDesc extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (context) =>
                             Page3()), // Pastikan Page2() adalah halaman yang ingin ditampilkan saat tombol ditekan
+                  );
+                }
+                 else if(nama == "Hafiz Hamdi") {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            Page4()), // Pastikan Page2() adalah halaman yang ingin ditampilkan saat tombol ditekan
                   );
                 }
               },

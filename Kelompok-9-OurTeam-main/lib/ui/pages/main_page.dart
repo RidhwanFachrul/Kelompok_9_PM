@@ -41,10 +41,10 @@ class _MainPageState extends State<MainPage> {
     ];
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black87,
+        backgroundColor: Colors.black38,
         title: const Text(
           "Our Team",
-          style: TextStyle(color: Colors.amber),
+          style: TextStyle(color: Colors.white),
         ),
       ),
       body: PageView.builder(

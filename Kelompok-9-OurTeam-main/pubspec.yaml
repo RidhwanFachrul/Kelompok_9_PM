@@ -30,4 +30,8 @@ flutter:
 
 fonts:
   - family: Poppins
-  - assets: fonts/Poppins-Black.ttf
+    fonts:
+    - assets: fonts/Poppins-Black.ttf
+  - family: Freehand
+    fonts:
+    - assets: fonts/Freehand-Regular.ttf

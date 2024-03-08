@@ -12,7 +12,7 @@ class IDCard extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(20)),
-        color: Color.fromARGB(186, 207, 13, 13),
+        color: Color.fromARGB(185, 73, 72, 72),
         
       ),
       child: Stack(children: <Widget>[

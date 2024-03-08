@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Page2 extends StatelessWidget {
-  final Uri _urlwa = Uri.parse("https://wa.me/+6282154891123");
+class Page4 extends StatelessWidget {
+  final Uri _urlwa = Uri.parse("https://wa.me/+6281348358729");
   final Uri urlemail =
-      Uri(scheme: 'mailto', path: "kevincahyo.22051@mhs.unesa.ac.id");
-  final Uri _urlgithub = Uri.parse("https://vinsmith-mib.github.io/portofolio_web/");
+      Uri(scheme: 'mailto', path: "ridhwan.22047@mhs.unesa.ac.id");
+  final Uri _urlgithub = Uri.parse("https://github.com/RidhwanFachrul");
 
-  Page2({Key? key}) : super(key: key);
+  Page4({Key? key}) : super(key: key);
 
   Future<void> _launchInBrowserView(Uri url) async {
     if (!await launchUrl(url, mode: LaunchMode.inAppBrowserView)) {
@@ -23,7 +23,7 @@ class Page2 extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color.fromARGB(39, 97, 97, 97),
         title: const Text(
-          "Kevin Cahyo Pratama",
+          "Hafiz Hamdi",
           style: TextStyle(
             color: Colors.white,
           ),
@@ -48,7 +48,7 @@ class Page2 extends StatelessWidget {
                         borderRadius:
                             const BorderRadius.all(Radius.circular(10)),
                         child: Image.asset(
-                          'assets/kevin.jpg',
+                          'assets/hafiz.jpg',
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -59,8 +59,8 @@ class Page2 extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.black38,
                           borderRadius: BorderRadius.circular(20)),
-                      child: const Text(
-                        "Raja Iblis",
+                      child: Text(
+                        "Power Ranger",
                         style: TextStyle(
                           fontSize: 14,
                           fontFamily: 'Freehand',
@@ -77,11 +77,11 @@ class Page2 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(
                         10), // Membuat sudut menjadi bulat
                   ),
-                  padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                  padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text(
+                      Text(
                         "ABOUT ME",
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -94,8 +94,8 @@ class Page2 extends StatelessWidget {
                       SizedBox(height: 5,),
                       Container(
                         width: 165,
-                        child: const Text(
-                          "Hai,Perkenalkan nama saya adalah Kevin Cahyo Pratama,Saya merupakan seorang mahasiswa dari Universitas Negeri Surabaya.Saya bercita cita menjadi menjadi manusia biasa.Saya juga sangat memiliki ketertarikan yang amat besar pada frasa Pemrograman mobile.",
+                        child: Text(
+                          "Hai,Perkenalkan nama saya adalah Ridhwan Fachrul Arief,Saya merupakan seorang mahasiswa dari Universitas Negeri Surabaya.Saya bercita cita menjadi menjadi orang yang bahagia.Saya juga sangat memiliki ketertarikan yang amat besar pada kalimat diksi .",
                           textAlign: TextAlign.start,
                           style: TextStyle(
                             fontSize: 11,
@@ -111,7 +111,7 @@ class Page2 extends StatelessWidget {
               ],
             ),
           ),
-          const Divider(
+          Divider(
             color: Colors.white, // Warna garis
             thickness: 1, // Ketebalan garis
             height: 20, // Tinggi garis
@@ -133,7 +133,7 @@ class Page2 extends StatelessWidget {
                   onPressed: () {
                     _launchInBrowserView(_urlwa);
                   },
-                  child: const Row(
+                  child: Row(
                     mainAxisAlignment:
                         MainAxisAlignment.center, // Memposisikan teks ke tengah
                     children: [
